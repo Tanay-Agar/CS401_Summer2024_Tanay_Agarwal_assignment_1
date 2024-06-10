@@ -19,4 +19,4 @@ If the user inputs a invalid choice in the exit step the program will keep on as
 
 Source code file name: Calculator.java
 Test Cases file name: Test cases with Screenshots.pdf
-Screenshot file name: Screenshot.pdf
+Screenshot file name: Screenshot.png
