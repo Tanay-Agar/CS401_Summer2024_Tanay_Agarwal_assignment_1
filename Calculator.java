@@ -30,7 +30,8 @@ public class Calculator {
                     scanner.next(); // clear invalid input
                 }
             }
-
+// [Bo Shen: is it possible to reuse the code above for the second number? 
+// - DRY (Don't Repeat Yourself) is one of the best practices in software engineering.]
             // Loop for valid second number input
             while (true) {
                 System.out.println("Please input the second number:"); // print statement for inputting the second number
@@ -76,7 +77,7 @@ public class Calculator {
                     System.out.printf("Result: %.2f * %.2f = %.2f\n", firstNumber, secondNumber, multiplyNumbers(firstNumber, secondNumber));
                     break;
                 case 4: // division case
-                    if (secondNumber == 0) {
+                    if (secondNumber == 0) { //[Bo Shen: best to have this logic within the divideNumbers() method - Encapsulation of functional logic]
                         System.out.println("Cannot divide by zero.");
                     } else {
                         System.out.printf("Result: %.2f / %.2f = %.2f\n", firstNumber, secondNumber, divideNumbers(firstNumber, secondNumber));
